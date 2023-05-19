@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created by: Priyanshu Pandya Created on: November 28, 2022-->
+
+<head>
+    <title>Contact - Stark Luxury Real Estate</title>
+    <meta content="real estate agent, properties, Real Estate, COMP213" name="keywords">
+    <meta content="A contact page of Stark Luxury Real Estate website" name="description">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="termproject.css" type="text/css">
+</head>
+
+<body>
+    <div id="contactPage">
+        <header>
+            <h2></h2>
+            <nav>
+                <a href="home.html">Home </a> |
+                <a href="properties.html">Properties </a> |
+                <a href="home.html#about">About </a> |
+                <a href="contact.html">Contact</a> |
+                <a href="sitemap.html">Site Map </a>
+            </nav>
+        </header>
+        <hr>
+        <div class="heading">
+            Contact
+        </div>
+        &nbsp;<br>
+        <main id="formPage">
+            <form action="mailto:starkluxuryrealestate@gmail.com" method="post">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <p>
+                        <label for="txtName">What is your <span>first name</span>?</label>
+                    </p>
+                    <p>
+                        <input id="txtName" name="txtName" size="25" type="text" required="required" tabindex="1"
+                            placeholder="First Name">
+                    </p>
+                    <p>
+                        <label for="txtLName">What is your <span>last name</span>?</label>
+                    </p>
+                    <p>
+                        <input id="txtLName" name="txtLName" size="25" type="text" required="required" tabindex="3"
+                            placeholder="Last Name">
+                    </p>
+                    <p>
+                        <label for="phone">Please enter your <span>phone number</span>.</label>
+                    </p>
+                    <p>
+                        <input id="phone" name="phone" type="text" placeholder="Phone" required="required" tabindex="5">
+                    </p>
+                    <p>
+                        <label for="email">Please enter your<span> e-mail address</span>.</label>
+                    </p>
+                    <p>
+                        <input name="email" id="email" type="email" placeholder="Email" tabindex="7">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Details of Property</legend>
+                    <p>
+                        <label for="optHouse">Are you <span>looking for / offering</span> a house?</label>
+                    </p>
+                    <p>
+                        <input id="optHouse" name="optHouse" type="radio" value="Buy" tabindex="9" required="required">
+                        I am looking for a new house
+                        <input id="optHouse" name="optHouse" type="radio" value="Sell"> I want to sell my house
+                    </p>
+                    <p>
+                        <label for="optType">What <span>type of house</span> are you looking for / offering?</label>
+                    </p>
+                    <p>
+                        <input id="optType" name="optType" type="radio" value="Apartment" tabindex="11"> Apartment
+                        <input id="optType" name="optType" type="radio" value="Condo"> Condominiums
+                        <input id="optType" name="optType" type="radio" value="Penthouse"> Penthouse
+                    </p>
+                    <p>
+                        <label for="optNofBed">Number of <span>bedrooms</span>?</label>
+                    </p>
+                    <ul>
+                        <li><input id="optNofBed" name="optNofBed" type="radio" value="&lt;2" tabindex="11"> Less than 2
+                        </li>
+                        <li><input id="optNofBed" name="optNofBed" type="radio" value="2"> 2</li>
+                        <li><input id="optNofBed" name="optNofBed" type="radio" value="3"> 3</li>
+                        <li><input id="optNofBed" name="optNofBed" type="radio" value="4"> 4</li>
+                        <li><input id="optNofBed" name="optNofBed" type="radio" value="&gt;4"> More than 4</li>
+                    </ul>
+                    <p>
+                        <label for="optNofBath">Number of <span>bathrooms</span>?</label>
+                    </p>
+                    <ul>
+                        <li><input id="optNofBath" name="optNofBath" type="radio" value="1" tabindex="13"> 1
+                        </li>
+                        <li><input id="optNofBath" name="optNofBath" type="radio" value="2"> 2</li>
+                        <li><input id="optNofBath" name="optNofBath" type="radio" value="3"> 3</li>
+                        <li><input id="optNofBath" name="optNofBath" type="radio" value="&gt;3"> More than 3</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional details</legend>
+                    <p>
+                        <label for="priceRange">What <span>price range</span> are you looking for?</label>
+                    </p>
+                    <p>
+                        <select id="priceRange" name="priceRange" tabindex="15">
+                            <option value=""> Please select </option>
+                            <option value="$1m-">Less than $1 million</option>
+                            <option value="$1-1.4m"> $1-1.4 million</option>
+                            <option value="$1.5-1.9m"> $1.5-1.9 million </option>
+                            <option value="$2-2.4m"> $2-2.4 million </option>
+                            <option value="$2.5-2.9m"> $2.5-2.9 million </option>
+                            <option value="$3-3.5m"> $3-3.5 million </option>
+                            <option value="$3.5m+"> $3.5 million + </option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="date">Desired <span>move-in/selling</span> date:</label>
+                    </p>
+                    <p>
+                        <input id="date" name="date" type="date" tabindex="17">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Any Other Comments</legend>
+                    <p>
+                        <label class="other" for="txtOther">Special Requirements / Comments: &nbsp;</label>
+                        <textarea id="txtOther" cols="81" name="txtOther" rows="5" tabindex="19"></textarea>
+                    </p>
+                </fieldset>
+                <p id="buttons">
+                    <input name="btnSubmit" tabindex="35" type="submit" class="button submit" value="Submit Form">
+                    <input name="btnReset" tabindex="37" type="reset" class="button reset" value="Clear Form">
+                </p>
+            </form>
+        </main>
+        &nbsp;<br>&nbsp;<br>&nbsp;
+        <footer>
+            <div id="footer">
+                <a href="home.html">Home </a> |
+                <a href="properties.html">Properties </a> |
+                <a href="home.html#about">About </a> |
+                <a href="contact.html">Contact</a> |
+                <a href="#top">Back to Top</a>
+                <p>
+                    Natalia Stark is committed to providing an accessible website. If you have difficulty accessing
+                    content, have difficulty viewing a file on the website, or notice any accessibility problems, please
+                    contact me at 012-345-6789 to specify the nature of the accessibility issue and any assistive
+                    technology you use. We strive to provide the content you need in the format you require.
+                </p>
+                <h5>&copy;&nbsp;Copyright 2022 Stark Luxury Real Estate, All Rights Reserved</h5>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
